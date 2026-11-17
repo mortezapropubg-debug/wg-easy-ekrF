@@ -1,0 +1,397 @@
+{
+  "common": {
+    "fields": {
+      "email": "Имейл",
+      "name": "Име",
+      "username": "Потребителско име",
+      "password": "Парола",
+      "newPassword": "Нова парола",
+      "confirmPassword": "Потвърди парола"
+    },
+    "actions": {
+      "continue": "Продължи",
+      "delete": "Изтрий",
+      "change": "Промени",
+      "cancel": "Отказ",
+      "create": "Създай",
+      "save": "Запази",
+      "revert": "Отмени промените",
+      "add": "Добави"
+    },
+    "yes": "Да",
+    "no": "Не",
+    "loading": "Зареждане...",
+    "update": {
+      "available": "Налична е актуализация!",
+      "action": "Актуализирай"
+    },
+    "theme": {
+      "dark": "Тъмна тема",
+      "light": "Светла тема",
+      "system": "Системна тема"
+    },
+    "donate": "Дарение",
+    "notifications": {
+      "success": "Успех",
+      "saved": "Запазено",
+      "error": "Грешка"
+    },
+    "form": {
+      "actions": "Действия",
+      "sections": {
+        "general": "Общи",
+        "advanced": "Разширени"
+      },
+      "noItems": "Няма елементи",
+      "nullNoItems": "Няма елементи. Използва се глобалната конфигурация"
+    },
+    "clipboard": {
+      "notSupported": "Копиране не се поддържа",
+      "copied": "Копирано!",
+      "failed": "Копирането неуспешно",
+      "copy": "Копирай"
+    }
+  },
+  "auth": {
+    "logout": "Изход",
+    "twoFactor": {
+      "title": "Двуфакторна автентикация",
+      "code": "TOTP код"
+    },
+    "login": {
+      "signIn": "Вход",
+      "rememberMe": "Запомни ме",
+      "rememberMeDescription": "Остани влязъл след затваряне на браузъра",
+      "insecure": "Не можеш да влезеш през несигурна връзка. Използвай HTTPS.",
+      "twoFactor": {
+        "required": "Изисква се двуфакторна автентикация",
+        "invalid": "Грешен код за двуфакторна автентикация"
+      }
+    }
+  },
+  "account": {
+    "title": "Профил",
+    "password": {
+      "current": "Текуща парола",
+      "update": "Обнови парола"
+    },
+    "twoFactor": {
+      "enable": {
+        "label": "Активирай двуфакторна автентикация",
+        "description": "Сканирай QR кода с твоето приложение за автентикатор или въведи ключа ръчно."
+      },
+      "key": "TOTP ключ",
+      "codeDescription": "Въведи кода от твоето приложение за автентикатор.",
+      "disable": {
+        "label": "Деактивирай двуфакторна автентикация",
+        "description": "Въведи паролата си, за да деактивираш двуфакторната автентикация."
+      }
+    }
+  },
+  "setup": {
+    "welcome": "Добре дошъл в първоначалната настройка на wg-easy",
+    "welcomeDescription": "Откри най-лесния начин да инсталираш и управляваш WireGuard на всеки Linux сървър",
+    "existingSetup": "Имаш ли вече съществуваща инсталация?",
+    "createAdminDescription": "Моля, първо въведи администраторско потребителско име и силна сигурна парола. Тези данни ще се използват за вход в административния панел.",
+    "setupConfigDescription": "Моля, въведи хост и порт. Тази информация ще се използва при генериране на клиентски конфигурации за WireGuard.",
+    "setupMigrationDescription": "Ако желаеш да мигрираш данните от предишна версия на wg-easy, качи резервното копие.",
+    "upload": "Качи",
+    "migration": "Възстанови от резервно копие:",
+    "createAccount": "Създай акаунт",
+    "successful": "Настройката е успешна",
+    "hostDescription": "Публично име/адрес, към който клиентите ще се свързват",
+    "portDescription": "Публичен UDP порт, на който клиентите ще се свързват и на който WireGuard слуша"
+  },
+  "clients": {
+    "title": "Клиенти",
+    "list": {
+      "toggleCharts": "Покажи/скрий графики",
+      "empty": "Все още няма клиенти.",
+      "new": "Нов",
+      "sort": "Сортирай",
+      "newClient": "Нов клиент",
+      "search": "Търси клиенти..."
+    },
+    "create": {
+      "action": "Създай клиент",
+      "success": "Клиентът е създаден",
+      "title": "Нов клиент"
+    },
+    "fields": {
+      "name": {
+        "label": "Име"
+      },
+      "expiresAt": {
+        "label": "Дата на изтичане",
+        "description": "Дата, след която клиентът ще бъде деактивиран. Празно = постоянен"
+      },
+      "address": {
+        "label": "Адрес"
+      },
+      "serverAllowedIps": {
+        "label": "Разрешени IP-та от сървъра",
+        "description": "Кои IP-та сървърът ще насочва към клиента"
+      },
+      "allowedIps": {
+        "description": "Кои IP-та ще се насочват през VPN (замества глобалната настройка)"
+      },
+      "mtu": {
+        "description": "Задава максималния размер на пакета (MTU) за VPN тунела"
+      },
+      "persistentKeepalive": {
+        "description": "Интервал (в секунди) за изпращане на keep-alive пакети. 0 = изключено"
+      },
+      "dns": {
+        "description": "DNS сървър, който клиентите ще използват (замества глобалната настройка)"
+      },
+      "endpoint": {
+        "label": "Крайна точка",
+        "description": "IP адресът на клиента, от който е установена WireGuard връзката"
+      }
+    },
+    "delete": {
+      "title": "Изтрий клиент",
+      "description": "Сигурен ли си, че искаш да изтриеш {name}? Това действие е необратимо."
+    },
+    "status": {
+      "enabled": "Активен",
+      "permanent": "Постоянно",
+      "createdOn": "Създаден на {date}",
+      "lastSeen": "Последно видян на {date}",
+      "disable": "Деактивирай клиент",
+      "enable": "Активирай клиент",
+      "notConnected": "Клиентът не е свързан"
+    },
+    "configuration": {
+      "oneTimeLink": "Генерирай кратък еднократен линк",
+      "noPrivateKey": "Този клиент няма известен частен ключ. Не може да се създаде конфигурация.",
+      "showQrCode": "Покажи QR код",
+      "download": "Изтегли конфигурация",
+      "title": "Конфигурация",
+      "view": "Прегледай конфигурацията"
+    },
+    "traffic": {
+      "totalDownload": "Общо изтеглени: {total}",
+      "totalUpload": "Общо качени: {total}"
+    },
+    "hooks": {
+      "title": "Hooks",
+      "description": "Hooks работят само с wg-quick",
+      "fieldDescription": "Само за wg-quick. В противен случай остави празно"
+    }
+  },
+  "admin": {
+    "title": "Админ Панел",
+    "general": {
+      "title": "Общи",
+      "sessionTimeout": {
+        "label": "Време на сесията",
+        "description": "Продължителност на сесията при „Запомни ме“ (в секунди)"
+      },
+      "metrics": "Метрики",
+      "metricsPassword": {
+        "label": "Парола",
+        "description": "Bearer парола за достъп до metrics ендпойнт (парола или argon2 хеш)"
+      },
+      "json": {
+        "label": "JSON",
+        "description": "Път за метрики в JSON формат"
+      },
+      "prometheus": {
+        "label": "Prometheus",
+        "description": "Път за Prometheus метрики"
+      }
+    },
+    "config": {
+      "title": "Конфигурация",
+      "connection": "Връзка",
+      "host": {
+        "description": "Публично име/адрес за клиентите (инвалидира конфигурациите)"
+      },
+      "port": {
+        "description": "Публичен UDP порт за клиентите (инвалидира конфигурациите; вероятно искаш да смениш и порта на интерфейса)"
+      },
+      "allowedIps": {
+        "description": "Разрешени IP-та за клиентите (глобална настройка)"
+      },
+      "dns": {
+        "description": "DNS сървър за клиентите (глобална настройка)"
+      },
+      "mtu": {
+        "description": "MTU, който ще ползват клиентите (само за нови клиенти)"
+      },
+      "persistentKeepalive": {
+        "description": "Интервал в секунди за keep-alive към сървъра. 0 = изключено (само за нови клиенти)"
+      },
+      "suggest": {
+        "label": "Предложи",
+        "description": "Избери IP адрес или хост за полето Host"
+      }
+    },
+    "interface": {
+      "title": "Интерфейс",
+      "cidrSuccess": "CIDR променен",
+      "device": {
+        "label": "Устройство",
+        "description": "Мрежово устройство, през което да се препраща WireGuard трафикът"
+      },
+      "mtu": {
+        "description": "MTU, който ще ползва WireGuard"
+      },
+      "port": {
+        "description": "UDP порт, на който слуша WireGuard (вероятно искаш да смениш и порта в Config)"
+      },
+      "changeCidr": "Смени CIDR",
+      "restart": {
+        "label": "Рестартирай интерфейс",
+        "description": "Рестартиране на WireGuard интерфейса"
+      },
+      "restartWarn": "Сигурен ли си, че искаш да рестартираш интерфейса? Всички клиенти ще бъдат изключени.",
+      "restartSuccess": "Интерфейсът е рестартиран"
+    },
+    "hooks": {
+      "title": "Hooks"
+    },
+    "introduction": "Добре дошъл в административния панел.\n\nТук можеш да управляваш общите настройки, конфигурацията, настройките на интерфейса и hooks.\n\nЗапочни, като избереш някоя от секциите в страничното меню."
+  },
+  "wireguard": {
+    "fields": {
+      "mtu": "MTU",
+      "allowedIps": "Разрешени IP-та",
+      "dns": "DNS",
+      "persistentKeepalive": "Постоянно поддържане на връзката",
+      "host": "Хост",
+      "port": "Порт"
+    },
+    "hooks": {
+      "preUp": "PreUp",
+      "postUp": "PostUp",
+      "preDown": "PreDown",
+      "postDown": "PostDown"
+    },
+    "obfuscation": {
+      "jC": {
+        "label": "Брой junk пакети (Jc)",
+        "description": "Брой junk пакети за изпращане (1–128, препоръчително: 4–12)"
+      },
+      "jMin": {
+        "label": "Минимален размер на junk пакети (Jmin)",
+        "description": "Минимален размер на junk пакетите (0–1279*, препоръчително: 8, трябва да е < Jmax)"
+      },
+      "jMax": {
+        "label": "Максимален размер на junk пакети (Jmax)",
+        "description": "Максимален размер на junk пакетите (1–1280*, препоръчително: 80, трябва да е > Jmin)"
+      },
+      "s1": {
+        "label": "Размер на junk в init пакета (S1)",
+        "description": "Размер на junk в init пакета (0–1132 [1280*−148=1132], препоръчително: 15–150, S1+56 ≠ S2)"
+      },
+      "s2": {
+        "label": "Размер на junk в отговорния пакет (S2)",
+        "description": "Размер на junk в response пакета (0–1188 [1280*−92=1188], препоръчително: 15–150)"
+      },
+      "s3": {
+        "label": "Размер на junk в cookie reply пакета (S3)",
+        "description": "Размер на junk в cookie reply пакета"
+      },
+      "s4": {
+        "label": "Размер на junk в транспортния пакет (S4)",
+        "description": "Размер на junk в транспортния пакет"
+      },
+      "h1": {
+        "label": "Init magic header (H1)",
+        "description": "Стойност на хедера в init пакета (5–2147483647, уникална спрямо H2–H4)"
+      },
+      "h2": {
+        "label": "Response magic header (H2)",
+        "description": "Стойност на хедера в response пакета (5–2147483647, уникална спрямо H1, H3, H4)"
+      },
+      "h3": {
+        "label": "Cookie reply magic header (H3)",
+        "description": "Стойност на хедера в cookie reply пакета (5–2147483647, уникална спрямо H1, H2, H4)"
+      },
+      "h4": {
+        "label": "Transport magic header (H4)",
+        "description": "Стойност на хедера в транспортния пакет (5–2147483647, уникална спрямо H1–H3)"
+      },
+      "i1": {
+        "label": "Специален junk пакет 1 (I1)",
+        "description": "Пакет за имитация на протокол в hex формат: <b 0x...>"
+      },
+      "i2": {
+        "label": "Специален junk пакет 2 (I2)",
+        "description": "Пакет за имитация на протокол в hex формат: <b 0x...>"
+      },
+      "i3": {
+        "label": "Специален junk пакет 3 (I3)",
+        "description": "Пакет за имитация на протокол в hex формат: <b 0x...>"
+      },
+      "i4": {
+        "label": "Специален junk пакет 4 (I4)",
+        "description": "Пакет за имитация на протокол в hex формат: <b 0x...>"
+      },
+      "i5": {
+        "label": "Специален junk пакет 5 (I5)",
+        "description": "Пакет за имитация на протокол в hex формат: <b 0x...>"
+      },
+      "mtuNote": "Стойностите зависят от MTU",
+      "title": "Параметри за обфускация на AmneziaWG"
+    }
+  },
+  "validation": {
+    "messages": {
+      "required": "{field} е задължително",
+      "validNumber": "{field} трябва да е валидно число",
+      "validString": "{field} трябва да е валиден текст",
+      "validBoolean": "{field} трябва да е валидна булева стойност",
+      "validArray": "{field} трябва да е валиден масив",
+      "stringMin": "{field} трябва да съдържа поне {min} символа",
+      "numberMin": "{field} трябва да е поне {min}"
+    },
+    "client": {
+      "id": "ID на клиента",
+      "name": "Име",
+      "expiresAt": "Изтича на",
+      "address4": "IPv4 адрес",
+      "address6": "IPv6 адрес",
+      "serverAllowedIps": "Разрешени IP-та от сървъра"
+    },
+    "user": {
+      "username": "Потребителско име",
+      "password": "Парола",
+      "remember": "Запомни",
+      "name": "Име",
+      "email": "Имейл",
+      "emailInvalid": "Имейлът трябва да е валиден",
+      "passwordMatch": "Паролите трябва да съвпадат",
+      "totpEnable": "Активиране на TOTP",
+      "totpEnableTrue": "TOTP Enable трябва да е true",
+      "totpCode": "TOTP код"
+    },
+    "userConfig": {
+      "host": "Хост"
+    },
+    "general": {
+      "sessionTimeout": "Време на сесията",
+      "metricsEnabled": "Метрики",
+      "metricsPassword": "Парола за метрики"
+    },
+    "interface": {
+      "cidr": "CIDR",
+      "device": "Устройство",
+      "cidrValid": "CIDR трябва да е валиден"
+    },
+    "otl": "Еднократен линк",
+    "stringMalformed": "Невалиден формат на низа",
+    "body": "Тялото трябва да е валиден обект",
+    "hook": "Hook",
+    "enabled": "Активиран",
+    "mtu": "MTU",
+    "port": "Порт",
+    "persistentKeepalive": "Постоянно поддържане на връзката",
+    "address": "IP адрес",
+    "dns": "DNS",
+    "allowedIps": "Разрешени IP-та",
+    "file": "Файл"
+  }
+}

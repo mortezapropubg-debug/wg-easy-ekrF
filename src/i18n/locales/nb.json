@@ -1,0 +1,397 @@
+{
+  "common": {
+    "fields": {
+      "email": "E-post",
+      "name": "Navn",
+      "username": "Brukernavn",
+      "password": "Passord",
+      "newPassword": "Nytt passord",
+      "confirmPassword": "Bekreft passord"
+    },
+    "actions": {
+      "continue": "Fortsett",
+      "delete": "Slett",
+      "change": "Endre",
+      "cancel": "Avbryt",
+      "create": "Opprett",
+      "save": "Lagre",
+      "revert": "Tilbakestill",
+      "add": "Legg til"
+    },
+    "yes": "Ja",
+    "no": "Nei",
+    "loading": "Laster...",
+    "update": {
+      "available": "En oppdatering er tilgjengelig!",
+      "action": "Oppdater"
+    },
+    "theme": {
+      "dark": "Mørkt tema",
+      "light": "Lyst tema",
+      "system": "Systemtema"
+    },
+    "donate": "Doner",
+    "notifications": {
+      "success": "Vellykket",
+      "saved": "Lagret",
+      "error": "Feil"
+    },
+    "form": {
+      "actions": "Handlinger",
+      "sections": {
+        "general": "Generelt",
+        "advanced": "Avansert"
+      },
+      "noItems": "Ingen elementer",
+      "nullNoItems": "Ingen elementer. Bruker global konfig"
+    },
+    "clipboard": {
+      "notSupported": "Kopiering støttes ikke",
+      "copied": "Kopiert!",
+      "failed": "Kopiering mislyktes",
+      "copy": "Kopier"
+    }
+  },
+  "auth": {
+    "logout": "Logg ut",
+    "twoFactor": {
+      "title": "Tofaktorautentisering",
+      "code": "TOTP-kode"
+    },
+    "login": {
+      "signIn": "Logg inn",
+      "rememberMe": "Husk meg",
+      "rememberMeDescription": "Hold deg innlogget etter at nettleseren lukkes",
+      "insecure": "Du kan ikke logge inn med en usikker tilkobling. Bruk HTTPS.",
+      "twoFactor": {
+        "required": "Tofaktorautentisering er påkrevd",
+        "invalid": "Tofaktorautentisering er feil"
+      }
+    }
+  },
+  "account": {
+    "title": "Konto",
+    "password": {
+      "current": "Nåværende passord",
+      "update": "Oppdater passord"
+    },
+    "twoFactor": {
+      "enable": {
+        "label": "Aktiver tofaktorautentisering",
+        "description": "Skann QR-koden med autentiseringsappen din eller skriv inn nøkkelen manuelt."
+      },
+      "key": "TOTP-nøkkel",
+      "codeDescription": "Skriv inn koden fra autentiseringsappen din.",
+      "disable": {
+        "label": "Deaktiver tofaktorautentisering",
+        "description": "Skriv inn passordet ditt for å deaktivere tofaktorautentisering."
+      }
+    }
+  },
+  "setup": {
+    "welcome": "Velkommen til ditt oppsett av wg-easy",
+    "welcomeDescription": "Du har funnet den enkleste måten å installere og administrere WireGuard på en hvilken som helst Linux-vert",
+    "existingSetup": "Har du et eksisterende oppsett?",
+    "createAdminDescription": "Skriv først inn et adminbrukernavn og et sterkt, sikkert passord. Denne informasjonen brukes til å logge inn i administrasjonspanelet.",
+    "setupConfigDescription": "Skriv inn vert- og portinformasjon. Dette brukes til klientkonfigurasjonen når du setter opp WireGuard på enhetene deres.",
+    "setupMigrationDescription": "Oppgi sikkerhetskopifilen hvis du vil migrere dataene dine fra forrige wg-easy-versjon til det nye oppsettet.",
+    "upload": "Last opp",
+    "migration": "Gjenopprett sikkerhetskopien:",
+    "createAccount": "Opprett konto",
+    "successful": "Oppsett vellykket",
+    "hostDescription": "Offentlig vertsnavn klienter vil koble seg til",
+    "portDescription": "Offentlig UDP-port klienter vil koble til og WireGuard vil lytte på"
+  },
+  "clients": {
+    "title": "Klienter",
+    "list": {
+      "toggleCharts": "Vis/skjul diagrammer",
+      "empty": "Det finnes ingen klienter ennå.",
+      "new": "Ny",
+      "sort": "Sorter",
+      "newClient": "Ny klient",
+      "search": "Søk etter klienter..."
+    },
+    "create": {
+      "action": "Opprett klient",
+      "success": "Klient opprettet",
+      "title": "Ny klient"
+    },
+    "fields": {
+      "name": {
+        "label": "Navn"
+      },
+      "expiresAt": {
+        "label": "Utløpsdato",
+        "description": "Datoen klienten blir deaktivert. Tomt for permanent"
+      },
+      "address": {
+        "label": "Adresse"
+      },
+      "serverAllowedIps": {
+        "label": "Server tillatte IP-er",
+        "description": "Hvilke IP-er serveren ruter til klienten"
+      },
+      "allowedIps": {
+        "description": "Hvilke IP-er som rutes gjennom VPN (overstyrer global konfig)"
+      },
+      "mtu": {
+        "description": "Setter maksimal overføringsenhet (pakkestørrelse) for VPN-tunnelen"
+      },
+      "persistentKeepalive": {
+        "description": "Setter intervallet (i sekunder) for keepalive-pakker. 0 deaktiverer det"
+      },
+      "dns": {
+        "description": "DNS-server klienter vil bruke (overstyrer global konfig)"
+      },
+      "endpoint": {
+        "label": "Endepunkt",
+        "description": "IP-en til klienten som WireGuard-tilkoblingen etableres fra"
+      }
+    },
+    "delete": {
+      "title": "Slett klient",
+      "description": "Er du sikker på at du vil slette {name}? Denne handlingen kan ikke angres."
+    },
+    "status": {
+      "enabled": "Aktivert",
+      "permanent": "Permanent",
+      "createdOn": "Opprettet {date}",
+      "lastSeen": "Sist sett {date}",
+      "disable": "Deaktiver klient",
+      "enable": "Aktiver klient",
+      "notConnected": "Klient ikke tilkoblet"
+    },
+    "configuration": {
+      "oneTimeLink": "Generer kort engangslenke",
+      "noPrivateKey": "Denne klienten har ingen kjent privat nøkkel. Kan ikke opprette konfigurasjon.",
+      "showQrCode": "Vis QR-kode",
+      "download": "Last ned konfigurasjon",
+      "title": "Konfigurasjon",
+      "view": "Vis konfigurasjon"
+    },
+    "traffic": {
+      "totalDownload": "Totalt nedlastet: {total}",
+      "totalUpload": "Totalt opplastet: {total}"
+    },
+    "hooks": {
+      "title": "Hooks",
+      "description": "Hooks fungerer bare med wg-quick",
+      "fieldDescription": "Kun for wg-quick. Ellers la det være tomt"
+    }
+  },
+  "admin": {
+    "title": "Adminpanel",
+    "general": {
+      "title": "Generelt",
+      "sessionTimeout": {
+        "label": "Øktutløp",
+        "description": "Øktvarighet for Husk meg (sekunder)"
+      },
+      "metrics": "Målinger",
+      "metricsPassword": {
+        "label": "Passord",
+        "description": "Bearer-passord for metrics-endepunktet (passord eller argon2-hash)"
+      },
+      "json": {
+        "label": "JSON",
+        "description": "Rute for metrics i JSON-format"
+      },
+      "prometheus": {
+        "label": "Prometheus",
+        "description": "Rute for Prometheus-målinger"
+      }
+    },
+    "config": {
+      "title": "Oppsett",
+      "connection": "Tilkobling",
+      "host": {
+        "description": "Offentlig vertsnavn klienter vil koble til (ugyldiggjør konfig)"
+      },
+      "port": {
+        "description": "Offentlig UDP-port klienter vil koble til (ugyldiggjør konfig, du vil sannsynligvis også endre Grensesnitt-port)"
+      },
+      "allowedIps": {
+        "description": "Tillatte IP-er klienter vil bruke (global konfig)"
+      },
+      "dns": {
+        "description": "DNS-server klienter vil bruke (global konfig)"
+      },
+      "mtu": {
+        "description": "MTU klienter vil bruke (kun for nye klienter)"
+      },
+      "persistentKeepalive": {
+        "description": "Intervall i sekunder for å sende keepalives til serveren. 0 = deaktivert (kun for nye klienter)"
+      },
+      "suggest": {
+        "label": "Foreslå",
+        "description": "Velg en IP-adresse eller et vertsnavn for Vert-feltet"
+      }
+    },
+    "interface": {
+      "title": "Grensesnitt",
+      "cidrSuccess": "CIDR endret",
+      "device": {
+        "label": "Enhet",
+        "description": "Ethernet-enhet som WireGuard-trafikken skal videresendes gjennom"
+      },
+      "mtu": {
+        "description": "MTU WireGuard vil bruke"
+      },
+      "port": {
+        "description": "UDP-port WireGuard vil lytte på (du vil sannsynligvis også endre Konfig-port)"
+      },
+      "changeCidr": "Endre CIDR",
+      "restart": {
+        "label": "Start grensesnitt på nytt",
+        "description": "Start WireGuard-grensesnittet på nytt"
+      },
+      "restartWarn": "Er du sikker på at du vil starte grensesnittet på nytt? Dette vil koble fra alle klienter.",
+      "restartSuccess": "Grensesnitt startet på nytt"
+    },
+    "hooks": {
+      "title": "Hooks"
+    },
+    "introduction": "Velkommen til adminpanelet.\n\nHer kan du administrere de generelle innstillingene, konfigurasjonen, grensesnittinnstillingene og hooks.\n\nStart med å velge en av seksjonene i sidepanelet."
+  },
+  "wireguard": {
+    "fields": {
+      "mtu": "MTU",
+      "allowedIps": "Tillatte IP-er",
+      "dns": "DNS",
+      "persistentKeepalive": "Vedvarende keepalive",
+      "host": "Vert",
+      "port": "Port"
+    },
+    "hooks": {
+      "preUp": "PreUp",
+      "postUp": "PostUp",
+      "preDown": "PreDown",
+      "postDown": "PostDown"
+    },
+    "obfuscation": {
+      "jC": {
+        "label": "Antall junk-pakker (Jc)",
+        "description": "Antall junk-pakker som skal sendes (1-128, anbefalt: 4-12)"
+      },
+      "jMin": {
+        "label": "Min. størrelse på junk-pakker (Jmin)",
+        "description": "Minimum størrelse på junk-pakker (0-1279*, anbefalt: 8, må være < Jmax)"
+      },
+      "jMax": {
+        "label": "Maks. størrelse på junk-pakker (Jmax)",
+        "description": "Maksimal størrelse på junk-pakker (1-1280*, anbefalt: 80, må være > Jmin)"
+      },
+      "s1": {
+        "label": "Init-pakke junk-størrelse (S1)",
+        "description": "Init-pakke junk-størrelse (0-1132[1280* - 148 = 1132], anbefalt: 15-150, S1+56 ≠ S2)"
+      },
+      "s2": {
+        "label": "Svarpakke junk-størrelse (S2)",
+        "description": "Svarpakke junk-størrelse (0-1188[1280* - 92 = 1188], anbefalt: 15-150)"
+      },
+      "s3": {
+        "label": "Cookie-svarpakke junk-størrelse (S3)",
+        "description": "Cookie-svarpakke junk-størrelse"
+      },
+      "s4": {
+        "label": "Transportpakke junk-størrelse (S4)",
+        "description": "Transportpakke junk-størrelse"
+      },
+      "h1": {
+        "label": "Init magisk header (H1)",
+        "description": "Init-pakke header-verdi (5-2147483647, må være unik fra H2-H4)"
+      },
+      "h2": {
+        "label": "Svar magisk header (H2)",
+        "description": "Svarpakke header-verdi (5-2147483647, må være unik fra H1, H3, H4)"
+      },
+      "h3": {
+        "label": "Cookie-svar magisk header (H3)",
+        "description": "Cookie-svarpakke header-verdi (5-2147483647, må være unik fra H1, H2, H4)"
+      },
+      "h4": {
+        "label": "Transport magisk header (H4)",
+        "description": "Transportpakke header-verdi (5-2147483647, må være unik fra H1-H3)"
+      },
+      "i1": {
+        "label": "Spesiell junk-pakke 1 (I1)",
+        "description": "Protokolllignende pakke i heksformat: <b 0x...>"
+      },
+      "i2": {
+        "label": "Spesiell junk-pakke 2 (I2)",
+        "description": "Protokolllignende pakke i heksformat: <b 0x...>"
+      },
+      "i3": {
+        "label": "Spesiell junk-pakke 3 (I3)",
+        "description": "Protokolllignende pakke i heksformat: <b 0x...>"
+      },
+      "i4": {
+        "label": "Spesiell junk-pakke 4 (I4)",
+        "description": "Protokolllignende pakke i heksformat: <b 0x...>"
+      },
+      "i5": {
+        "label": "Spesiell junk-pakke 5 (I5)",
+        "description": "Protokolllignende pakke i heksformat: <b 0x...>"
+      },
+      "mtuNote": "Verdier avhenger av MTU",
+      "title": "AmneziaWG obfuskasjonsparametere"
+    }
+  },
+  "validation": {
+    "messages": {
+      "required": "{field} er påkrevd",
+      "validNumber": "{field} må være et gyldig tall",
+      "validString": "{field} må være en gyldig streng",
+      "validBoolean": "{field} må være en gyldig boolsk verdi",
+      "validArray": "{field} må være en gyldig liste",
+      "stringMin": "{field} må være minst {min} tegn",
+      "numberMin": "{field} må være minst {min}"
+    },
+    "client": {
+      "id": "Klient-ID",
+      "name": "Navn",
+      "expiresAt": "Utløper",
+      "address4": "IPv4-adresse",
+      "address6": "IPv6-adresse",
+      "serverAllowedIps": "Server tillatte IP-er"
+    },
+    "user": {
+      "username": "Brukernavn",
+      "password": "Passord",
+      "remember": "Husk",
+      "name": "Navn",
+      "email": "E-post",
+      "emailInvalid": "E-post må være en gyldig e-postadresse",
+      "passwordMatch": "Passord må være like",
+      "totpEnable": "TOTP aktivert",
+      "totpEnableTrue": "TOTP aktivert må være sant",
+      "totpCode": "TOTP-kode"
+    },
+    "userConfig": {
+      "host": "Vert"
+    },
+    "general": {
+      "sessionTimeout": "Øktutløp",
+      "metricsEnabled": "Målinger",
+      "metricsPassword": "Målingspassord"
+    },
+    "interface": {
+      "cidr": "CIDR",
+      "device": "Enhet",
+      "cidrValid": "CIDR må være gyldig"
+    },
+    "otl": "Engangslenke",
+    "stringMalformed": "Strengen er ugyldig",
+    "body": "Innholdet må være et gyldig objekt",
+    "hook": "Hook",
+    "enabled": "Aktivert",
+    "mtu": "MTU",
+    "port": "Port",
+    "persistentKeepalive": "Vedvarende keepalive",
+    "address": "IP-adresse",
+    "dns": "DNS",
+    "allowedIps": "Tillatte IP-er",
+    "file": "Fil"
+  }
+}
